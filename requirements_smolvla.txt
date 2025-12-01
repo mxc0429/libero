@@ -1,0 +1,33 @@
+# SmolVLA Training Requirements for LIBERO
+# Install these in addition to the base LIBERO requirements
+
+# Core dependencies
+torch>=1.11.0
+torchvision>=0.12.0
+transformers>=4.35.0
+accelerate>=0.20.0
+
+# Data processing
+h5py>=3.7.0
+numpy>=1.21.0
+Pillow>=9.0.0
+
+# Training utilities
+tqdm>=4.64.0
+wandb>=0.13.0
+tensorboard>=2.10.0
+
+# Model utilities
+einops>=0.6.0
+timm>=0.6.0
+
+# Optional: for LoRA fine-tuning
+peft>=0.5.0
+
+# Optional: for mixed precision training
+apex  # Install from: https://github.com/NVIDIA/apex (optional)
+
+# Utilities
+easydict>=1.10
+omegaconf>=2.2.0
+hydra-core>=1.2.0
