@@ -2,6 +2,12 @@ import os
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 import sys
+import warnings
+
+# 抑制警告
+warnings.filterwarnings('ignore', category=DeprecationWarning)
+warnings.filterwarnings('ignore', category=FutureWarning)
+warnings.filterwarnings('ignore', category=UserWarning)
 import json
 import multiprocessing
 import pprint

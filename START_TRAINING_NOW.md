@@ -248,6 +248,27 @@ python evaluate_with_display.py \
 
 ---
 
+## ⚠️ 关于警告信息
+
+训练时会看到一些警告信息，这些都是**正常的**，不会影响训练：
+
+- `[robosuite WARNING] No private macro file found!` - robosuite 的配置警告，可以忽略
+- `Gym has been unmaintained since 2022` - Gym 库的提示，不影响使用
+- `DeprecationWarning` - 库版本兼容性警告，不影响功能
+- `FutureWarning` - 未来版本变更提示，不影响当前使用
+
+**这些警告已经被抑制**，如果你看到它们，说明训练正在正常进行！
+
+训练成功的标志：
+```
+[info] Epoch:   0 | train loss:  5.28 | time: 1.93
+[info] Epoch:   0 | succ: 0.00 ± 0.00 | best succ: 0.0 | succ. AoC 0.00 | time: 1.97
+```
+
+看到这些输出说明训练已经开始了！✅
+
+---
+
 ## 🎉 总结
 
 ### 最简单的开始方式

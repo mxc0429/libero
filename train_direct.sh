@@ -35,7 +35,7 @@ echo ""
 
 CUDA_VISIBLE_DEVICES=$GPU_ID \
 MUJOCO_EGL_DEVICE_ID=$GPU_ID \
-conda run -n mxc_libero --no-capture-output \
+conda run -n libero --no-capture-output \
 python libero/lifelong/main.py \
     seed=$SEED \
     benchmark_name=LIBERO_10 \
