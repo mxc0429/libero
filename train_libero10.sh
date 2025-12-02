@@ -63,6 +63,7 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=$POLICY \
     lifelong=$ALGO \
+    train.num_workers=0 \
     2>&1 | tee training.log
 
 echo ""

@@ -32,7 +32,7 @@ if ! python -c "import libero" 2>/dev/null; then
 fi
 
 # 检查数据集
-DATASET_DIR="./libero/datasets/datasets/libero_10"
+DATASET_DIR="./libero/datasets/libero_10"
 if [ ! -d "$DATASET_DIR" ]; then
     echo "错误: 数据集目录不存在: $DATASET_DIR"
     echo "请先下载数据集"
@@ -53,6 +53,7 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=$POLICY \
     lifelong=$ALGO \
+    train.num_workers=0 \
     2>&1 | tee training_gpu${GPU_ID}_${ALGO}_${POLICY}_seed${SEED}.log
 
 echo ""

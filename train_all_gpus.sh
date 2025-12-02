@@ -43,6 +43,8 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=bc_rnn_policy \
     lifelong=base \
+    train.num_workers=0 \
+    eval.num_workers=0 \
     > logs/gpu0_base_seed42.log 2>&1 &
 PID0=$!
 
@@ -54,6 +56,8 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=bc_rnn_policy \
     lifelong=er \
+    train.num_workers=0 \
+    eval.num_workers=0 \
     > logs/gpu1_er_seed42.log 2>&1 &
 PID1=$!
 
@@ -65,6 +69,8 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=bc_rnn_policy \
     lifelong=ewc \
+    train.num_workers=0 \
+    eval.num_workers=0 \
     > logs/gpu2_ewc_seed42.log 2>&1 &
 PID2=$!
 
@@ -76,6 +82,8 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=bc_rnn_policy \
     lifelong=packnet \
+    train.num_workers=0 \
+    eval.num_workers=0 \
     > logs/gpu3_packnet_seed42.log 2>&1 &
 PID3=$!
 
@@ -87,6 +95,8 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=bc_rnn_policy \
     lifelong=multitask \
+    train.num_workers=0 \
+    eval.num_workers=0 \
     > logs/gpu4_multitask_seed42.log 2>&1 &
 PID4=$!
 
@@ -98,6 +108,8 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=bc_transformer_policy \
     lifelong=base \
+    train.num_workers=0 \
+    eval.num_workers=0 \
     > logs/gpu5_transformer_seed42.log 2>&1 &
 PID5=$!
 
@@ -109,6 +121,8 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=bc_rnn_policy \
     lifelong=base \
+    train.num_workers=0 \
+    eval.num_workers=0 \
     > logs/gpu6_base_seed100.log 2>&1 &
 PID6=$!
 
@@ -120,6 +134,8 @@ python libero/lifelong/main.py \
     benchmark_name=LIBERO_10 \
     policy=bc_rnn_policy \
     lifelong=base \
+    train.num_workers=0 \
+    eval.num_workers=0 \
     > logs/gpu7_base_seed200.log 2>&1 &
 PID7=$!
 
