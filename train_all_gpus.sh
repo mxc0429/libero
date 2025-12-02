@@ -8,14 +8,14 @@ echo "在 8 张 GPU 上并行训练"
 echo "=========================================="
 
 # 检查 conda 环境
-if ! conda info --envs | grep -q "libero"; then
-    echo "错误: libero conda 环境不存在"
+if ! conda info --envs | grep -q "mxc_libero"; then
+    echo "错误: mxc_libero conda 环境不存在"
     exit 1
 fi
 
 # 激活环境
-source $(conda info --base)/etc/profile.d/conda.sh
-conda activate libero
+eval "$(conda shell.bash hook)"
+conda activate mxc_libero
 
 # 创建日志目录
 mkdir -p logs
